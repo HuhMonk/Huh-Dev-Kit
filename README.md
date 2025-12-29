@@ -124,4 +124,21 @@ void Update()
     _Transform = _Transform.MatchOtherTransform(Target);
 }
 ```
+
+### RandomChance can be used to get a boolean value if random chance is the exact or below Target Percentage
+```csharp
+public float TargetPercentage = 17; // 17% chance
+
+void Start()
+{
+    if(RandomChance(TargetPercentage))
+    {
+        Debug.Log("You Won");
+    }
+    else
+    {
+        Debug.Log("Aw Back Luck");
+    }
+}
+```
 # W.I.P
